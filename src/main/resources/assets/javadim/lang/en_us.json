@@ -1,0 +1,11 @@
+{
+  "item.javadim.soylent": "Soylent",
+  "item.javadim.soy_bean": "Soy Bean",
+  "item.javadim.marx": "Marx",
+  "item.javadim.false_command_scrap": "False Command Scrap",
+
+  "block.javadim.coffee_block": "Coffee Block",
+  "block.javadim.false_command_block": "False Command Block",
+
+  "itemgroup.javadim": "Java Dimension"
+}

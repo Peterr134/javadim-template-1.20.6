@@ -10,12 +10,15 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.peterlogan.javadim.Javadim;
+import net.peterlogan.javadim.item.custom.MetalDetectorItem;
+import net.peterlogan.javadim.item.custom.ModFoodComponents;
 
 public class ModItems {
-    public static final Item SOYLENT = registerItem("soylent", new Item(new Item.Settings()));
+    public static final Item SOYLENT = registerItem("soylent", new Item(new Item.Settings().food(ModFoodComponents.SOYLENT)));
     public static final Item SOY_BEAN = registerItem("soy_bean", new Item(new Item.Settings()));
     public static final Item MARX = registerItem("marx", new Item(new Item.Settings()));
     public static final Item FALSE_COMMAND_SCRAP = registerItem("false_command_scrap", new Item(new Item.Settings()));
+    public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new Item.Settings().maxDamage(64)));
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries){
     }
 

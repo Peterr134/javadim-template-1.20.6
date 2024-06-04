@@ -2,15 +2,13 @@ package net.peterlogan.javadim.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.mixin.object.builder.AbstractBlockSettingsAccessor;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.HayBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.peterlogan.javadim.Javadim;
 
 public class ModBlocks {
@@ -19,7 +17,10 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.HAY_BLOCK)));
 
     public static final Block FALSE_COMMAND_BLOCK = registerBlock("false_command_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.ANCIENT_DEBRIS)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5),AbstractBlock.Settings.copy(Blocks.ANCIENT_DEBRIS).sounds(Blocks.BEACON.getDefaultState().getSoundGroup())));
+
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.NOTE_BLOCK)));
 
 
     private static Block registerBlock(String name, Block block){

@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "javadim",
+	"version": "${version}",
+	"name": "javadim",
+	"description": "surely i will understand how modding works after this",
+	"authors": [
+		"Peter and Logan"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/javadim/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.peterlogan.javadim.Javadim"
+		],
+		"client": [
+			"net.peterlogan.javadim.JavadimClient"
+		],
+		"fabric-datagen": [
+			"net.peterlogan.javadim.JavadimDataGenerator"
+		]
+	},
+	"mixins": [
+		"javadim.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

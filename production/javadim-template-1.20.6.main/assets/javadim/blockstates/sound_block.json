@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "javadim:block/sound_block"
+    }
+  }
+}

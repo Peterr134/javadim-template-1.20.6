@@ -1,0 +1,4 @@
+// 1.20.6	2024-06-04T14:46:57.550829	javadim/Block Loot Tables
+a07f62521722e4df16a012b8809105bfd5941495 data/javadim/loot_tables/blocks/sound_block.json
+2a6ada88aa4d80a598e47508c974d319873ccafe data/javadim/loot_tables/blocks/false_command_block.json
+8bc4aa432e3a6f565fbd8f534fa2f6877c94cf30 data/javadim/loot_tables/blocks/coffee_block.json

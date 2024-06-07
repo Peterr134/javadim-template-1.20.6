@@ -18,7 +18,10 @@ public class ModItemGroups {
                         entries.add(ModItems.SOYLENT);
                         entries.add(ModItems.SOY_BEAN);
                         entries.add(ModItems.FALSE_COMMAND_SCRAP);
+                        entries.add(ModItems.FABRIC);
+                        entries.add(ModItems.MARX);
                         entries.add(ModItems.METAL_DETECTOR);
+
 
                         entries.add(ModBlocks.COFFEE_BLOCK);
                         entries.add(ModBlocks.FALSE_COMMAND_BLOCK);

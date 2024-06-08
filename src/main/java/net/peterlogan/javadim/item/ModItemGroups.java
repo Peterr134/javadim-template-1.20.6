@@ -20,10 +20,14 @@ public class ModItemGroups {
                         entries.add(ModItems.FALSE_COMMAND_SCRAP);
                         entries.add(ModItems.METAL_DETECTOR);
 
+                        entries.add(ModItems.FABRIC_HELMET);
+                        entries.add(ModItems.FABRIC_CHESTPLATE);
+                        entries.add(ModItems.FABRIC_LEGGINGS);
+                        entries.add(ModItems.FABRIC_BOOTS);
+
                         entries.add(ModBlocks.COFFEE_BLOCK);
                         entries.add(ModBlocks.FALSE_COMMAND_BLOCK);
                         entries.add(ModBlocks.SOUND_BLOCK);
-
                     })).build());
 
     public static void registerItemGroups() {

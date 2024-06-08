@@ -5,6 +5,11 @@
   "item.javadim.false_command_scrap": "False Command Scrap",
   "item.javadim.metal_detector": "Metal Detector",
 
+  "item.javadim.fabric_helmet": "Fabric Helmet",
+  "item.javadim.fabric_chestplate": "Fabric Chestplate",
+  "item.javadim.fabric_leggins": "Fabric Leggins",
+  "item.javadim.fabric_boots": "Fabric Boots",
+
   "block.javadim.coffee_block": "Coffee Block",
   "block.javadim.false_command_block": "False Command Block",
   "block.javadim.sound_block": "Sound Block",

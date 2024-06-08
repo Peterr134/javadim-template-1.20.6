@@ -1,8 +1,9 @@
-// 1.20.6	2024-06-04T14:46:57.547371	javadim/Model Definitions
+// 1.20.6	2024-06-08T15:06:51.632422	javadim/Model Definitions
 cea18bbe25790eed7f022c46f313bcfdbc6c2ad5 assets/javadim/models/item/false_command_scrap.json
 fda125d0cc68c0d737076c4cf49d098dd869e905 assets/javadim/blockstates/false_command_block.json
 5fbd6da8ba620dd161aaf8f32818621d6d062bc4 assets/javadim/blockstates/sound_block.json
 66f8f7c353de62fc7a01787485b4f613a6598263 assets/javadim/models/block/coffee_block.json
+470254de8ec66f4072a9d4a4e3beb02062d3930a assets/javadim/models/item/fabric.json
 f9727e08355e8d389f9c5e104a5a665f5f748b43 assets/javadim/blockstates/coffee_block.json
 f8e9a414dc5c2bda877997dd8c1357c30d2b7477 assets/javadim/models/item/false_command_block.json
 18c9d2391f452aef0603fc3a7ee7f7559f8a9676 assets/javadim/models/block/false_command_block.json

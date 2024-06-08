@@ -27,6 +27,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SOYLENT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOY_BEAN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FABRIC, Models.GENERATED);
 
     }
 }

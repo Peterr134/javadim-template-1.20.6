@@ -9,6 +9,7 @@ import net.peterlogan.javadim.entity.custom.JavacupineEntity;
 import net.peterlogan.javadim.item.ModItemGroups;
 import net.peterlogan.javadim.item.ModItems;
 import net.peterlogan.javadim.util.ModCustomTrades;
+import net.peterlogan.javadim.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,5 +26,7 @@ public class Javadim implements ModInitializer {
 		ModCustomTrades.registerCustomTrades();
 
 		FabricDefaultAttributeRegistry.register((ModEntities.PORCUPINE), JavacupineEntity.createPorcupineAttributes());
+
+		ModWorldGeneration.generateModWorldGen();
 	}
 }

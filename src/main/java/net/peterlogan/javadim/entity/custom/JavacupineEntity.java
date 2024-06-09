@@ -70,7 +70,7 @@ public class JavacupineEntity extends AnimalEntity {
         this.goalSelector.add(6, new LookAroundGoal(this));
     }
 
-    public static DefaultAttributeContainer.Builder createPorcupineAttributes() {
+    public static DefaultAttributeContainer.Builder createJavacupineAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 15)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2f)
@@ -80,7 +80,7 @@ public class JavacupineEntity extends AnimalEntity {
     @Override
     @Nullable
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity){
-        return ModEntities.PORCUPINE.create(world);
+        return ModEntities.JAVACUPINE.create(world);
     }
 
     @Nullable

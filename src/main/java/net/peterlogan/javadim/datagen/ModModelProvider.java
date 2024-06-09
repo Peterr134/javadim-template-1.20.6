@@ -22,6 +22,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COFFEE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FALSE_COMMAND_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COMMENT_GRASS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COLON_STONE);
     }
 
     @Override

@@ -11,19 +11,19 @@ import net.peterlogan.javadim.entity.custom.JavacupineEntity;
 // Made with Blockbench 4.8.3
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
-public class PorcupineModel<T extends JavacupineEntity> extends SinglePartEntityModel<T> {
-	private final ModelPart porcupine;
+public class JavacupineModel<T extends JavacupineEntity> extends SinglePartEntityModel<T> {
+	private final ModelPart javacupine;
 	private final ModelPart head;
-	public PorcupineModel(ModelPart root) {
-		this.porcupine = root.getChild("porcupine");
-		this.head = porcupine.getChild("body").getChild("torso").getChild("head");
+	public JavacupineModel(ModelPart root) {
+		this.javacupine = root.getChild("javacupine");
+		this.head = javacupine.getChild("body").getChild("torso").getChild("head");
 	}
 	public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();
 		ModelPartData modelPartData = modelData.getRoot();
-		ModelPartData porcupine = modelPartData.addChild("porcupine", ModelPartBuilder.create(), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
+		ModelPartData javacupine = modelPartData.addChild("javacupine", ModelPartBuilder.create(), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
 
-		ModelPartData body = porcupine.addChild("body", ModelPartBuilder.create(), ModelTransform.pivot(0.0F, -4.0F, 0.0F));
+		ModelPartData body = javacupine.addChild("body", ModelPartBuilder.create(), ModelTransform.pivot(0.0F, -4.0F, 0.0F));
 
 		ModelPartData torso = body.addChild("torso", ModelPartBuilder.create().uv(0, 0).cuboid(-3.0F, -3.0F, -4.0F, 6.0F, 5.0F, 8.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 0.0F, 0.0F));
 
@@ -162,8 +162,8 @@ public class PorcupineModel<T extends JavacupineEntity> extends SinglePartEntity
 		this.getPart().traverse().forEach(ModelPart::resetTransform);
 		this.setHeadAngles(netHeadYaw, headPitch);
 
-		this.animateMovement(ModAnimations.PORCUPINE_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
-		this.updateAnimation(entity.idleAnimationState, ModAnimations.PORCUPINE_IDLE, ageInTicks, 1f);
+		this.animateMovement(ModAnimations.JAVACUPINE_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
+		this.updateAnimation(entity.idleAnimationState, ModAnimations.JAVACUPINE_IDLE, ageInTicks, 1f);
 	}
 
 	private void setHeadAngles(float headYaw, float headPitch){
@@ -175,11 +175,11 @@ public class PorcupineModel<T extends JavacupineEntity> extends SinglePartEntity
 	}
 	@Override
 	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
-		porcupine.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
+		javacupine.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 	}
 
 	@Override
 	public ModelPart getPart() {
-		return porcupine;
+		return javacupine;
 	}
 }

@@ -1,4 +1,6 @@
-// 1.20.6	2024-06-08T20:40:00.031369	javadim/Block Loot Tables
+// 1.20.6	2024-06-08T23:42:58.460024	javadim/Block Loot Tables
+c46c82d0efa0eece21f827768905fa398991f528 data/javadim/loot_tables/blocks/colon_stone.json
 a07f62521722e4df16a012b8809105bfd5941495 data/javadim/loot_tables/blocks/sound_block.json
 2a6ada88aa4d80a598e47508c974d319873ccafe data/javadim/loot_tables/blocks/false_command_block.json
+7073a10e14c98ef8882b72d4829dcfe32e8a2543 data/javadim/loot_tables/blocks/comment_grass.json
 8bc4aa432e3a6f565fbd8f534fa2f6877c94cf30 data/javadim/loot_tables/blocks/coffee_block.json

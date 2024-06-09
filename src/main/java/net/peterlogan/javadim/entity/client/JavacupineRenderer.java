@@ -8,11 +8,11 @@ import net.minecraft.util.Identifier;
 import net.peterlogan.javadim.Javadim;
 import net.peterlogan.javadim.entity.custom.JavacupineEntity;
 
-public class JavacupineRenderer extends MobEntityRenderer<JavacupineEntity, PorcupineModel<JavacupineEntity>> {
+public class JavacupineRenderer extends MobEntityRenderer<JavacupineEntity, JavacupineModel<JavacupineEntity>> {
 
-    private static final Identifier TEXTURE = new Identifier(Javadim.MOD_ID, "textures/entity/porcupine.png");
+    private static final Identifier TEXTURE = new Identifier(Javadim.MOD_ID, "textures/entity/javacupine.png");
     public JavacupineRenderer(EntityRendererFactory.Context context) {
-        super(context, new PorcupineModel<>(context.getPart(ModModelLayers.JAVACUPINE)), 0.6f);
+        super(context, new JavacupineModel<>(context.getPart(ModModelLayers.JAVACUPINE)), 0.6f);
     }
 
     @Override

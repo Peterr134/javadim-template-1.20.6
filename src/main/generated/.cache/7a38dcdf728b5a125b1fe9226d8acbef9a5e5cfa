@@ -1,6 +1,7 @@
-// 1.20.6	2024-06-08T20:40:00.031029	javadim/Tags for minecraft:block
+// 1.20.6	2024-06-08T23:42:58.459402	javadim/Tags for minecraft:block
+c378b6a89bb1903a73eddb19a6500e28aaad3f25 data/minecraft/tags/blocks/mineable/shovel.json
 0c853256586a5ec825b1ea02d82c193fca8f0ca4 data/minecraft/tags/blocks/needs_diamond_tool.json
-32cb6e7e4b113b148eea9a3757bc8ec5775fbf49 data/minecraft/tags/blocks/mineable/axe.json
 65221e3b98963fadcfa9878a1dc34599af5e5a5b data/minecraft/tags/blocks/mineable/hoe.json
+32cb6e7e4b113b148eea9a3757bc8ec5775fbf49 data/minecraft/tags/blocks/mineable/axe.json
 2444c61fa1b5c26b250149a8439e1e7ff471e8e3 data/javadim/tags/blocks/metal_detector_detectable_blocks.json
-0c853256586a5ec825b1ea02d82c193fca8f0ca4 data/minecraft/tags/blocks/mineable/pickaxe.json
+737d72057403fe2fdb25f3b63d70362d3423a377 data/minecraft/tags/blocks/mineable/pickaxe.json

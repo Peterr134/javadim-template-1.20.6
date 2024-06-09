@@ -21,12 +21,14 @@ public class ModItemGroups {
                         entries.add(ModItems.FABRIC);
                         entries.add(ModItems.MARX);
                         entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.JAVACUPINE_SPAWN_EGG);
 
 
                         entries.add(ModBlocks.COFFEE_BLOCK);
                         entries.add(ModBlocks.FALSE_COMMAND_BLOCK);
                         entries.add(ModBlocks.SOUND_BLOCK);
-                        entries.add(ModItems.JAVACUPINE_SPAWN_EGG);
+                        entries.add(ModBlocks.COLON_STONE);
+                        entries.add(ModBlocks.COMMENT_GRASS);
 
                     })).build());
 

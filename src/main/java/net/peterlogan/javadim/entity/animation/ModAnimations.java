@@ -7,7 +7,7 @@ import net.minecraft.client.render.entity.animation.Transformation;
 
 public class ModAnimations {
 
-    public static final Animation PORCUPINE_WALK = Animation.Builder.create(2.5f).looping()
+    public static final Animation JAVACUPINE_WALK = Animation.Builder.create(2.5f).looping()
             .addBoneAnimation("torso",
                     new Transformation(Transformation.Targets.TRANSLATE,
                             new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
@@ -68,7 +68,7 @@ public class ModAnimations {
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(2.0834335f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR))).build();
-    public static final Animation PORCUPINE_IDLE = Animation.Builder.create(2f).looping()
+    public static final Animation JAVACUPINE_IDLE = Animation.Builder.create(2f).looping()
             .addBoneAnimation("torso",
                     new Transformation(Transformation.Targets.TRANSLATE,
                             new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
@@ -143,7 +143,7 @@ public class ModAnimations {
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(1.9167667f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR))).build();
-    public static final Animation PORCUPINE_ATTACK = Animation.Builder.create(2f).looping()
+    public static final Animation JAVACUPINE_ATTACK = Animation.Builder.create(2f).looping()
             .addBoneAnimation("torso",
                     new Transformation(Transformation.Targets.TRANSLATE,
                             new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
@@ -396,8 +396,8 @@ public class ModAnimations {
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(1.75f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR))).build();
-    public static final Animation PORCUPINE_SIT = Animation.Builder.create(2f).looping()
-            .addBoneAnimation("porcupine",
+    public static final Animation JAVACUPINE_SIT = Animation.Builder.create(2f).looping()
+            .addBoneAnimation("javacupine",
                     new Transformation(Transformation.Targets.TRANSLATE,
                             new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, -0.5f, 0f),
                                     Transformation.Interpolations.LINEAR)))

@@ -10,6 +10,8 @@
   "block.javadim.coffee_block": "Coffee Block",
   "block.javadim.false_command_block": "False Command Block",
   "block.javadim.sound_block": "Sound Block",
+  "block.javadim.comment_grass": "Commented Grass",
+  "block.javadim.colon_stone": "Semicolon Stone",
 
 
   "itemgroup.javadim": "Java Dimension"

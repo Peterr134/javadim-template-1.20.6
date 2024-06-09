@@ -20,10 +20,8 @@ public class ModItems {
     public static final Item SOY_BEAN = registerItem("soy_bean", new Item(new Item.Settings()));
     public static final Item MARX = registerItem("marx", new Item(new Item.Settings()));
     public static final Item FALSE_COMMAND_SCRAP = registerItem("false_command_scrap", new Item(new Item.Settings()));
-
-    public static final Item JAVACUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg", new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new Item.Settings()));
+    public static final Item JAVACUPINE_SPAWN_EGG = registerItem("javacupine_spawn_egg", new SpawnEggItem(ModEntities.JAVACUPINE, 0xa86518, 0x3b260f, new Item.Settings()));
     public static final Item FABRIC = registerItem("fabric", new Item(new Item.Settings()));
-
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new Item.Settings().maxDamage(64)));
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries){
     }

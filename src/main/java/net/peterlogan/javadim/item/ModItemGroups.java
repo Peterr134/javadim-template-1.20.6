@@ -22,6 +22,11 @@ public class ModItemGroups {
                         entries.add(ModItems.MARX);
                         entries.add(ModItems.METAL_DETECTOR);
 
+                        entries.add(ModItems.FALSE_COMMAND_SWORD);
+                        entries.add(ModItems.FALSE_COMMAND_SHOVEL);
+                        entries.add(ModItems.FALSE_COMMAND_PICKAXE);
+                        entries.add(ModItems.FALSE_COMMAND_AXE);
+                        entries.add(ModItems.FALSE_COMMAND_HOE);
 
                         entries.add(ModBlocks.COFFEE_BLOCK);
                         entries.add(ModBlocks.FALSE_COMMAND_BLOCK);

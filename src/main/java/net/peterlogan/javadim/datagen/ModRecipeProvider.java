@@ -41,5 +41,58 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.PAPER), conditionsFromItem(Items.PAPER))
                 .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(ModItems.FALSE_COMMAND_SCRAP))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FABRIC)));
+
+        //region False Command Tools
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FALSE_COMMAND_SWORD, 1)
+                .pattern("#")
+                .pattern("#")
+                .pattern("X")
+                .input('#', ModItems.FALSE_COMMAND_SCRAP)
+                .input('X', Items.STICK)
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FALSE_COMMAND_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FALSE_COMMAND_SHOVEL, 1)
+                .pattern("#")
+                .pattern("X")
+                .pattern("X")
+                .input('#', ModItems.FALSE_COMMAND_SCRAP)
+                .input('X', Items.STICK)
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FALSE_COMMAND_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FALSE_COMMAND_PICKAXE, 1)
+                .pattern("###")
+                .pattern(" X ")
+                .pattern(" X ")
+                .input('#', ModItems.FALSE_COMMAND_SCRAP)
+                .input('X', Items.STICK)
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FALSE_COMMAND_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FALSE_COMMAND_AXE, 1)
+                .pattern("##")
+                .pattern("X#")
+                .pattern("X ")
+                .input('#', ModItems.FALSE_COMMAND_SCRAP)
+                .input('X', Items.STICK)
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FALSE_COMMAND_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FALSE_COMMAND_HOE, 1)
+                .pattern("##")
+                .pattern("X ")
+                .pattern("X ")
+                .input('#', ModItems.FALSE_COMMAND_SCRAP)
+                .input('X', Items.STICK)
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FALSE_COMMAND_HOE)));
+        //endregion
+
     }
 }

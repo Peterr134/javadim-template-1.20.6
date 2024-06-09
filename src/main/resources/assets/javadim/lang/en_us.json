@@ -6,6 +6,13 @@
   "item.javadim.metal_detector": "Metal Detector",
   "item.javadim.fabric": "Fabric",
 
+  "item.javadim.false_command_sword": "False Command Sword",
+  "item.javadim.false_command_shovel": "False Command Shovel",
+  "item.javadim.false_command_pickaxe": "False Command Pickaxe",
+  "item.javadim.false_command_axe": "False Command Axe",
+  "item.javadim.false_command_hoe": "False Command Hoe",
+
+
   "block.javadim.coffee_block": "Coffee Block",
   "block.javadim.false_command_block": "False Command Block",
   "block.javadim.sound_block": "Sound Block",

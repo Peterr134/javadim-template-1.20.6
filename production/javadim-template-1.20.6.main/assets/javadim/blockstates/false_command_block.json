@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "javadim:block/false_command_block"
+    }
+  }
+}

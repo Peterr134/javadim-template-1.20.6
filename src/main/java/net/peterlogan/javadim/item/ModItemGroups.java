@@ -20,10 +20,10 @@ public class ModItemGroups {
                         entries.add(ModItems.FALSE_COMMAND_SCRAP);
                         entries.add(ModItems.METAL_DETECTOR);
 
-                        entries.add(ModItems.FABRIC_HELMET);
-                        entries.add(ModItems.FABRIC_CHESTPLATE);
-                        entries.add(ModItems.FABRIC_LEGGINGS);
-                        entries.add(ModItems.FABRIC_BOOTS);
+                        entries.add(ModItems.FALSE_COMMAND_HELMET);
+                        entries.add(ModItems.FALSE_COMMAND_CHESTPLATE);
+                        entries.add(ModItems.FALSE_COMMAND_LEGGINGS);
+                        entries.add(ModItems.FALSE_COMMAND_BOOTS);
 
                         entries.add(ModBlocks.COFFEE_BLOCK);
                         entries.add(ModBlocks.FALSE_COMMAND_BLOCK);

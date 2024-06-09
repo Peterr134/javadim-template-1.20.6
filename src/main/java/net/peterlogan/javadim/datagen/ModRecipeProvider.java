@@ -30,5 +30,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(Items.GLASS_BOTTLE))
                 .criterion(hasItem(ModItems.SOY_BEAN), conditionsFromItem(ModItems.SOY_BEAN))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SOYLENT)));
+
+        //region Fabric Armor
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FALSE_COMMAND_HELMET, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .input('X', ModItems.FALSE_COMMAND_SCRAP)
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(ModItems.FALSE_COMMAND_SCRAP))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FALSE_COMMAND_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FALSE_COMMAND_CHESTPLATE, 1)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ModItems.FALSE_COMMAND_SCRAP)
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(ModItems.FALSE_COMMAND_SCRAP))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FALSE_COMMAND_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FALSE_COMMAND_LEGGINGS, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.FALSE_COMMAND_SCRAP)
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(ModItems.FALSE_COMMAND_SCRAP))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FALSE_COMMAND_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FALSE_COMMAND_BOOTS, 1)
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.FALSE_COMMAND_SCRAP)
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(ModItems.FALSE_COMMAND_SCRAP))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FALSE_COMMAND_BOOTS)));
+        //endregion
     }
 }

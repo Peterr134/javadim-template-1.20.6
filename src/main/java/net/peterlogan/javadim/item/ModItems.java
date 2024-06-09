@@ -23,10 +23,10 @@ public class ModItems {
     public static final Item FALSE_COMMAND_SCRAP = registerItem("false_command_scrap", new Item(new Item.Settings()));
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new Item.Settings().maxDamage(64)));
 
-    public static final Item FABRIC_HELMET = registerItem("fabric_helmet", new ArmorItem(ModArmorMaterials.FABRIC, ArmorItem.Type.HELMET, new Item.Settings()));
-    public static final Item FABRIC_CHESTPLATE = registerItem("fabric_chestplate", new ArmorItem(ModArmorMaterials.FABRIC, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
-    public static final Item FABRIC_LEGGINGS = registerItem("fabric_leggins", new ArmorItem(ModArmorMaterials.FABRIC, ArmorItem.Type.LEGGINGS, new Item.Settings()));
-    public static final Item FABRIC_BOOTS = registerItem("fabric_boots", new ArmorItem(ModArmorMaterials.FABRIC, ArmorItem.Type.BOOTS, new Item.Settings()));
+    public static final Item FALSE_COMMAND_HELMET = registerItem("false_command_helmet", new ArmorItem(ModArmorMaterials.FALSE_COMMAND, ArmorItem.Type.HELMET, new Item.Settings()));
+    public static final Item FALSE_COMMAND_CHESTPLATE = registerItem("false_command_chestplate", new ArmorItem(ModArmorMaterials.FALSE_COMMAND, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+    public static final Item FALSE_COMMAND_LEGGINGS = registerItem("false_command_leggings", new ArmorItem(ModArmorMaterials.FALSE_COMMAND, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+    public static final Item FALSE_COMMAND_BOOTS = registerItem("false_command_boots", new ArmorItem(ModArmorMaterials.FALSE_COMMAND, ArmorItem.Type.BOOTS, new Item.Settings()));
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
     }

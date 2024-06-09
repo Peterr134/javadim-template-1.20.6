@@ -15,13 +15,14 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials {
+    public static final RegistryEntry FALSE_COMMAND;
     public static final RegistryEntry FABRIC;
 
     public ModArmorMaterials() {
     }
 
     static {
-        FABRIC = register("fabric", (EnumMap) Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+        FALSE_COMMAND = register("diamond", (EnumMap) Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
             map.put(ArmorItem.Type.BOOTS, 1);
             map.put(ArmorItem.Type.LEGGINGS, 2);
             map.put(ArmorItem.Type.CHESTPLATE, 3);
@@ -29,16 +30,20 @@ public class ModArmorMaterials {
             map.put(ArmorItem.Type.BODY, 3);
         }), 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F, 0.0F, () -> {
             return Ingredient.ofItems(new ItemConvertible[]{Items.LEATHER});
-        }, List.of(
-                new ArmorMaterial.Layer(new Identifier("javadim","diamond"))
-        ));
+        });
+        FABRIC = register("diamond", (EnumMap) Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+            map.put(ArmorItem.Type.BOOTS, 1);
+            map.put(ArmorItem.Type.LEGGINGS, 2);
+            map.put(ArmorItem.Type.CHESTPLATE, 3);
+            map.put(ArmorItem.Type.HELMET, 1);
+            map.put(ArmorItem.Type.BODY, 3);
+        }), 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F, 0.0F, () -> {
+            return Ingredient.ofItems(new ItemConvertible[]{Items.LEATHER});
+        });
 
     }
 
-    public static RegistryEntry<ArmorMaterial> getDefault(Registry<ArmorMaterial> registry) {
-        return ArmorMaterials.LEATHER;
-    }
-
+    //region Helpers
     private static RegistryEntry<ArmorMaterial> register(
             String id,
             EnumMap<ArmorItem.Type, Integer> defense,
@@ -47,7 +52,7 @@ public class ModArmorMaterials {
             float knockbackResistance,
             Supplier<Ingredient> repairIngredient
     ) {
-        List<ArmorMaterial.Layer> list = List.of(new ArmorMaterial.Layer(new Identifier(id)));
+        List<ArmorMaterial.Layer> list = List.of(new ArmorMaterial.Layer(new Identifier("javadim", id)));
         return register(id, defense, enchantability, equipSound, toughness, knockbackResistance, repairIngredient, list);
     }
 
@@ -70,6 +75,7 @@ public class ModArmorMaterials {
             enumMap.put(type, (Integer) defense.get(type));
         }
 
-        return Registry.registerReference(Registries.ARMOR_MATERIAL, new Identifier(id), new ArmorMaterial(enumMap, enchantability, equipSound, repairIngredient, layers, toughness, knockbackResistance));
+        return Registry.registerReference(Registries.ARMOR_MATERIAL, new Identifier("javadim", id), new ArmorMaterial(enumMap, enchantability, equipSound, repairIngredient, layers, toughness, knockbackResistance));
     }
+    //endregion
 }

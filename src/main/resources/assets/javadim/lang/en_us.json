@@ -5,10 +5,12 @@
   "item.javadim.false_command_scrap": "False Command Scrap",
   "item.javadim.metal_detector": "Metal Detector",
   "item.javadim.fabric": "Fabric",
+  "item.javadim.javacupine_spawn_egg": "Javacupine Spawn Egg",
 
   "block.javadim.coffee_block": "Coffee Block",
   "block.javadim.false_command_block": "False Command Block",
   "block.javadim.sound_block": "Sound Block",
+
 
   "itemgroup.javadim": "Java Dimension"
 }

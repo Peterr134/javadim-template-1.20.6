@@ -26,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.COFFEE_BLOCK);
                         entries.add(ModBlocks.FALSE_COMMAND_BLOCK);
                         entries.add(ModBlocks.SOUND_BLOCK);
+                        entries.add(ModItems.JAVACUPINE_SPAWN_EGG);
 
                     })).build());
 

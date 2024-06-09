@@ -41,5 +41,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.PAPER), conditionsFromItem(Items.PAPER))
                 .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(ModItems.FALSE_COMMAND_SCRAP))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FABRIC)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.METAL_DETECTOR, 1)
+                .pattern("IIN")
+                .pattern("IXI")
+                .pattern("III")
+                .input('X', ModItems.FALSE_COMMAND_SCRAP)
+                .input('N', Items.NETHERITE_INGOT)
+                .input('I', Items.IRON_INGOT)
+                .criterion(hasItem(ModItems.FALSE_COMMAND_SCRAP), conditionsFromItem(ModItems.FALSE_COMMAND_SCRAP))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.METAL_DETECTOR)));
     }
 }

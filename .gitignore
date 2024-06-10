@@ -39,6 +39,7 @@ replay_*.log
 *.hprof
 *.jfr
 
-# data gen
+# cache
 
 /src/main/generated/.cache/
+/production/javadim-template-1.20.6.main/.cache

@@ -22,6 +22,9 @@ public class ModBlocks {
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
             new Block(AbstractBlock.Settings.copy(Blocks.NOTE_BLOCK)));
 
+    public static final Block COLON_STONE = registerBlock("colon_stone", new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static final Block COMMENT_GRASS = registerBlock("comment_grass", new Block(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK)));
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);

@@ -1,0 +1,5 @@
+// 1.20.6	2024-06-08T23:42:58.459745	javadim/World Gen
+d2e736b41cd07b5c959d2a46df22cdb2fde323e6 data/javadim/worldgen/configured_feature/false_command_ore.json
+ee05312e8cc842fffede1fc59a10f5d4b7c1f8d4 data/javadim/worldgen/placed_feature/false_command_placed.json
+d636362b1a70e40b7e1205b2fb847e8cc7c3a867 data/javadim/worldgen/biome/java_biome.json
+e3158c12f03d2122de87a09d909c7516e6ae0cbe data/javadim/dimension_type/javadim_type.json

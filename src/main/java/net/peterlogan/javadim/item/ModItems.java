@@ -5,10 +5,14 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.impl.itemgroup.FabricItemGroup;
 import net.minecraft.item.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.peterlogan.javadim.Javadim;
+import net.peterlogan.javadim.entity.ModEntities;
 import net.peterlogan.javadim.item.custom.MetalDetectorItem;
 import net.peterlogan.javadim.item.custom.ModFoodComponents;
 import net.peterlogan.javadim.item.custom.ModToolMaterials;
@@ -18,8 +22,8 @@ public class ModItems {
     public static final Item SOY_BEAN = registerItem("soy_bean", new Item(new Item.Settings()));
     public static final Item MARX = registerItem("marx", new Item(new Item.Settings()));
     public static final Item FALSE_COMMAND_SCRAP = registerItem("false_command_scrap", new Item(new Item.Settings()));
+    public static final Item JAVACUPINE_SPAWN_EGG = registerItem("javacupine_spawn_egg", new SpawnEggItem(ModEntities.JAVACUPINE, 0xa86518, 0x3b260f, new Item.Settings()));
     public static final Item FABRIC = registerItem("fabric", new Item(new Item.Settings()));
-
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new Item.Settings().maxDamage(64)));
 
     public static final Item FALSE_COMMAND_SWORD = registerItem("false_command_sword", new SwordItem(ModToolMaterials.FALSE_COMMAND, (new Item.Settings()).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FALSE_COMMAND, 5, -1.8F))));

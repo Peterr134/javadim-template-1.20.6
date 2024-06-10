@@ -5,6 +5,7 @@
   "item.javadim.false_command_scrap": "False Command Scrap",
   "item.javadim.metal_detector": "Metal Detector",
   "item.javadim.fabric": "Fabric",
+  "item.javadim.javacupine_spawn_egg": "Javacupine Spawn Egg",
 
   "item.javadim.false_command_sword": "False Command Sword",
   "item.javadim.false_command_shovel": "False Command Shovel",
@@ -16,6 +17,9 @@
   "block.javadim.coffee_block": "Coffee Block",
   "block.javadim.false_command_block": "False Command Block",
   "block.javadim.sound_block": "Sound Block",
+  "block.javadim.comment_grass": "Commented Grass",
+  "block.javadim.colon_stone": "Semicolon Stone",
+
 
   "itemgroup.javadim": "Java Dimension"
 }

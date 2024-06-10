@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "X": {
+      "item": "javadim:false_command_scrap"
+    }
+  },
+  "pattern": [
+    "IIN",
+    "IXI",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "javadim:metal_detector"
+  }
+}
